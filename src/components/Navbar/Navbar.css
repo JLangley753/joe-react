@@ -1,0 +1,262 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+}
+
+.topbar {
+  background-color: rgba(17, 45, 78, 0);
+  color: #f7f7f7;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  position: fixed;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+}
+
+.solidnav {
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(17, 45, 78, 0.97);
+  height: 58px;
+  transition: 0.5s ease-in-out;
+}
+
+/* Little Joe image styling */
+.littlejoe {
+  display: block;
+  margin: 0;
+  padding: 8px 8px 4px 8px;
+  position: fixed;
+  z-index: 20;
+}
+
+.littlejoe img {
+  border-radius: 50%;
+  height: 64px;
+  transition: 0.5s ease-in-out;
+  width: auto;
+}
+
+.littlejoe a:hover, .littlejoe a:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.amendedjoe img {
+  height: 44px;
+  transition: 0.5s ease-in-out;
+}
+
+/* Burger menu */
+.burgermenu {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 15px 10px;
+  right: 0;
+  position: fixed;
+}
+
+.burgermenu:active, .burgermenu:hover {
+  outline: none;
+}
+
+.bar1, .bar2, .bar3 {
+  height: 3px;
+  background-color: #f7f7f7;
+  margin: 6px 0;
+  transition: 0.5s ease-in-out;
+  width: 35px;
+}
+
+.changebar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.changebar2 {
+  opacity: 0;
+}
+
+.changebar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* Drop down menu */
+.dropdownmenu {
+  background: rgba(17, 45, 78, 0);
+  opacity: 1;
+  position: fixed;
+  text-align: center;
+  top: 80px;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  width: 100%;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.ddshow {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  visibility: visible;
+}
+
+.changedd {
+  background: rgba(17, 45, 78, 0.5);
+  top: 58px;
+  transition: 0.5s ease-in-out;
+}
+
+/* Navbar links section styling */
+.navlink {
+  color: #f7f7f7;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.navlink:after {
+  display: none;
+}
+
+.navlink:after:hover {
+  display: none;
+}
+
+.home, .projects, .contact, .about, .skills {
+  color: #f7f7f7;
+  font-weight: 100;
+  margin: 3px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+/* Social Media section  */
+.socialmediawrap {
+  margin: 13px 7px;
+  transition: 0.5s ease;
+}
+
+.socialmedia {
+  padding: 5px;
+}
+
+.socialmedia img {
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  width: 36px;
+}
+
+.socialmedia a {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.socialmedia a:hover, a:focus {
+  opacity: 0.65;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+@media (min-width: 768px) {
+
+  /* Media queries for navbar and dropdown */
+  .topbar {
+    height: 80px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .solidnav {
+    background-color: rgba(17, 45, 78, 0.97);
+    transition: 0.5s ease-in-out;
+    height: 58px;
+  }
+
+  .burgermenu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .dropdownmenu {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    visibility: visible;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .dd {
+    opacity: 1;
+  }
+
+  .changedd {
+    height: 58px;
+  }
+
+  .dropdownmenu a {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+
+  .home, .projects, .contact, .about, .skills {
+    font-size: 1em;
+    padding: 0 5px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navlink {
+    display: block;
+    font-weight: 100;
+    margin: 20px 5px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navlink:after {
+    background: none repeat scroll 0 0 transparent;
+    background-color: #f7f7f7;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 1.5px;
+    opacity: 0;
+    left: 50%;
+    position: absolute;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s, opacity 0.5s ease 0s;
+    width: 0;
+  }
+
+  .navlink:hover:after, .navlink:focus:after {
+    opacity: 1;
+    left: 0;
+    width: 100%;
+  }
+
+  .changenavlink {
+    font-weight: 100;
+    margin: 10px 5px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .socialmediawrapbig {
+    margin: 16px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .smallsmwd {
+  margin: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+
+}
