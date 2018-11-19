@@ -11,6 +11,10 @@ class Navbar extends Component {
     isTop: true,
   }
 
+  burger() {
+
+  }
+
   componentDidMount() {
     document.addEventListener('scroll', () => {
       const isTop = window.scrollY < 50;
@@ -26,16 +30,16 @@ class Navbar extends Component {
         <div className={this.state.isTop ? 'littlejoe' : 'littlejoe amendedjoe'}><img src={lj} alt=""/></div>
         <div className="dropdownmenu">
           <div className="projects">
-            <h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>Projects</h2>
+            <a href="\"><h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>Projects</h2></a>
           </div>
           <div className="about">
-            <h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>About</h2>
+            <a href="\"><h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>About</h2></a>
           </div>
           <div className="skills">
-            <h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>Skills</h2>
+            <a href="\"><h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>Skills</h2></a>
           </div>
           <div className="contact">
-            <h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>Contact</h2>
+            <a href="\"><h2 className={this.state.isTop ? 'navlink' : 'navlink changenavlink'}>Contact</h2></a>
           </div>
           <div className={this.state.isTop ? 'socialmediawrap' : 'socialmediawrap smallsmwd'}>
             <div className="socialmedia">
@@ -46,7 +50,7 @@ class Navbar extends Component {
             </div>
           </div>
         </div>
-        <div className="burgermenu">
+        <div className={this.state.isTop ? 'burgermenu' : 'burgermenu changeburger'} onClick={this.burger}>
           <div className="bar1 bar"></div>
           <div className="bar2 bar"></div>
           <div className="bar3 bar"></div>

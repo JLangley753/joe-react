@@ -5,7 +5,7 @@
   background-size: cover;
   height: 1080px;
   font-weight: 100;
-  z-index: -1;
+  z-index: -3;
 }
 
 /* Intro text section */
@@ -28,4 +28,13 @@
 .pagebar {
   border-top: 1px solid #112d4e;
   padding: 0;
+}
+
+@media (min-width: 525px) {
+  .intro h1 {
+    font-weight: 100;
+    padding: 450px 0;
+    text-align: center;
+    transition: 0.3s ease;
+  }
 }
