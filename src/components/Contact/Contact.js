@@ -57,7 +57,7 @@ class Contact extends Component {
               <input type="text" name="name" placeholder="Your name.." className="formbox"/>
               <input type="text" name="mail" placeholder="Your email.." className="formbox"/>
               <textarea name="howcanihelp" cols="10" rows="4" className="formbox letschat" placeholder="Let's chat.."></textarea>
-              <button id="contactbutton" className="submitbutton" type="submit" value="Submit" name="submit" onClick={this.handleClick}>Submit</button>
+              <button id="contactbutton" className="submitbutton" type="submit" name="submit" onClick={this.handleClick}>Send</button>
             </form>
           </div>
         </div>

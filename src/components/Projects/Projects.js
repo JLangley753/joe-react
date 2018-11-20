@@ -11,11 +11,11 @@ import ra from '../../img/rightarrow.png';
 
 class Projects extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       slideIndex: 0
-    }
+    };
 
     this.nextSlide = this.nextSlide.bind(this);
     this.previousSlide = this.previousSlide.bind(this);
