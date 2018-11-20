@@ -11,7 +11,7 @@ class About extends Component {
         <div className="aboutmewrap">
           <div className="aboutmesection">
             <div className="aboutmeimg">
-              <img src={joe} alt="A big picture of Joe"/>
+              <img src={joe} alt="Joe"/>
             </div>
             <div className="aboutmetxt">
               <p>My name is Joe Langley, and I'm a front end web developer based in West London. I love to create websites from scratch that look great and respond well on all devices.</p>

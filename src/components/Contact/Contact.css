@@ -1,0 +1,152 @@
+.pagebar {
+  border-top: 1px solid #112d4e;
+  padding: 0;
+}
+
+/* Content wrap */
+.content {
+  margin: 20px;
+}
+
+/* Contact form section */
+.contactwrap {}
+
+.contactformsection {}
+
+.letschat, .formbox {}
+
+.formItem {
+  padding: 50px 0;
+}
+
+.formbox {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(17, 45, 78, 0.5);
+  box-sizing: border-box;
+  color: #112d4e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin: 5px 0;
+  padding: 8px;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.formbox:focus, .letschat:focus {
+  border-bottom: 1px solid rgba(17, 45, 78, 1);
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.formbox::placeholder, .letschat::placeholder {
+  color: #112d4e;
+  opacity: 0.8;
+}
+
+.letschat {
+  border-bottom: 1px solid rgba(17, 45, 78, 0.5);
+  height: 36px;
+  resize: none;
+  transition: 0.3s ease;
+}
+
+.submitbutton {
+  background-color: transparent;
+  border: 1px solid rgba(17, 45, 78, 0.5);
+  color: rgba(17, 45, 78, 0.8);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 10px;
+  padding: 10px 50px;
+  transition: 0.3s ease;
+}
+
+.submitbutton:hover, .submitbutton:focus {
+  background-color: rgba(17, 45, 78, 0.97);
+  color: #f7f7f7;
+  border: 1px solid rgba(17, 45, 78, 1);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.letschat:active, .letschat:focus {
+  border-bottom: 1px solid rgba(17, 45, 78, 1);
+  height: 130px;
+  transition: 0.3s ease;
+}
+
+/* Thank you modal */
+.modal {
+  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 130%;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  top: -250px;
+  transition: 0.8s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.showmodal {
+  opacity: 1;
+  top: 0;
+  transition: 0.8s ease;
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 5px;
+  border-top: 15px solid #112d4e;
+  margin: 35% 20px;
+  padding: 20px;
+  transition: 0.8s ease;
+  width: auto;
+}
+
+.show-modal-content {
+  transition: 0.8s ease;
+}
+
+.sadmodal {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  /* Content wrap media queries */
+  .content {
+    margin: 30px auto;
+    width: 730px;
+  }
+
+  /* Contact form media queries */
+  .modal-content {
+    margin: 15% auto;
+    padding: auto 0;
+    width: 690px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    margin: 30px auto;
+    width: 1010px;
+  }
+
+  .contactformsection {
+    width: 100%;
+  }
+
+  .modal-content {
+    margin: 15% auto;
+    padding: auto 0;
+    width: 970px;
+  }
+}

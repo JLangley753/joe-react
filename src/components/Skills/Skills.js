@@ -14,50 +14,50 @@ import mdb from '../../img/techicons/mongo.png';
 class Skills extends Component {
   render() {
     return (<div className="skills-section-wrap">
-      <div class="pagebar content"></div>
+      <div className="pagebar content"></div>
       <section className="skillsSec content" id="skills">
         <h2>Skills</h2>
         <p>While I specialise in front end development, I have enjoyed my exposure to back end technologies and design principles. Below you'll find what kind of skills and technologies I've picked up during my studies.</p>
         <div className="skillsGrid">
-          <div class="tooltip">
-            <img src={html} class="techicon" alt=""></img>
-            <span class="tooltiptext tthtml">HTML5</span>
+          <div className="tooltip">
+            <img src={html} className="techicon" alt=""></img>
+            <span className="tooltiptext tthtml">HTML5</span>
           </div>
-          <div class="tooltip">
-            <img src={css} class="techicon" alt=""></img>
-            <span class="tooltiptext ttcss">CSS3</span>
+          <div className="tooltip">
+            <img src={css} className="techicon" alt=""></img>
+            <span className="tooltiptext ttcss">CSS3</span>
           </div>
-          <div class="tooltip">
-            <img src={js} class="techicon" alt=""></img>
-            <span class="tooltiptext ttjs">JavaScript</span>
+          <div className="tooltip">
+            <img src={js} className="techicon" alt=""></img>
+            <span className="tooltiptext ttjs">JavaScript</span>
           </div>
-          <div class="tooltip">
-            <img src={jq} class="techicon" alt=""></img>
-            <span class="tooltiptext">jQuery</span>
+          <div className="tooltip">
+            <img src={jq} className="techicon" alt=""></img>
+            <span className="tooltiptext">jQuery</span>
           </div>
-          <div class="tooltip">
-            <img src={re} class="techicon" alt=""></img>
-            <span class="tooltiptext ttreact">React</span>
+          <div className="tooltip">
+            <img src={re} className="techicon" alt=""></img>
+            <span className="tooltiptext ttreact">React</span>
           </div>
-          <div class="tooltip">
-            <img src={git} class="techicon" alt=""></img>
-            <span class="tooltiptext ttgit">Git</span>
+          <div className="tooltip">
+            <img src={git} className="techicon" alt=""></img>
+            <span className="tooltiptext ttgit">Git</span>
           </div>
-          <div class="tooltip">
-            <img src={node} class="techicon" alt=""></img>
-            <span class="tooltiptext ttnode">Node.js</span>
+          <div className="tooltip">
+            <img src={node} className="techicon" alt=""></img>
+            <span className="tooltiptext ttnode">Node.js</span>
           </div>
-          <div class="tooltip">
-            <img src={php} class="techicon" alt=""></img>
-            <span class="tooltiptext ttphp">PHP</span>
+          <div className="tooltip">
+            <img src={php} className="techicon" alt=""></img>
+            <span className="tooltiptext ttphp">PHP</span>
           </div>
-          <div class="tooltip">
-            <img src={exp} class="techicon" alt=""></img>
-            <span class="tooltiptext ttexpress">Express.js</span>
+          <div className="tooltip">
+            <img src={exp} className="techicon" alt=""></img>
+            <span className="tooltiptext ttexpress">Express.js</span>
           </div>
-          <div class="tooltip">
-            <img src={mdb} class="techicon" alt=""></img>
-            <span class="tooltiptext ttmongo">MongoDB</span>
+          <div className="tooltip">
+            <img src={mdb} className="techicon" alt=""></img>
+            <span className="tooltiptext ttmongo">MongoDB</span>
           </div>
         </div>
       </section>
