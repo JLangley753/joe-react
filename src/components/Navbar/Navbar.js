@@ -6,6 +6,10 @@ import ig from '../../img/ig.png';
 import tw from '../../img/tw.png';
 import lj from '../../img/littlejoe.jpg';
 
+var dd = document.querySelector('.dd'); // dropdowm menu
+var bars = document.getElementsByClassName('bar');
+var barsArray = [].slice.call(bars);
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -19,10 +23,6 @@ class Navbar extends Component {
   }
 
   burger() {
-    var dd = document.querySelector('.dd'); // dropdowm menu
-    var bars = document.getElementsByClassName('bar');
-    var barsArray = [].slice.call(bars);
-
     dd.classList.toggle('ddshow');
     for (var i = 0; i < barsArray.length; i++) {
       barsArray[i].classList.toggle('changebar' + [i + 1]);
@@ -58,16 +58,10 @@ class Navbar extends Component {
         this.setState({isTop})
       }
     });
-    var dd = document.querySelector('.dd'); // dropdowm menu
-    var bars = document.getElementsByClassName('bar');
-    var barsArray = [].slice.call(bars);
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
-        var dd = document.querySelector('.dd'); // dropdowm menu
-        var bars = document.getElementsByClassName('bar');
-        var barsArray = [].slice.call(bars);
         setTimeout(function close() {
           dd.classList.remove('ddshow');
           for (var i = 0; i < barsArray.length; i++) {
